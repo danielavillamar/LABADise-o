@@ -141,6 +141,8 @@ class ExpressionTree:
 
         while not self.is_empty():
             self.postfix.append(self.pop())
+        
+        print(self.postfix)
 
     # Genera el arbol de la expresion a partir del postfix
     def generate_functions(self, node: Node, i=0):
